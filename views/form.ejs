@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Générateur de README Pro</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>README Pro Generator</h1>
+  <form action="/generate" method="post">
+    <input name="project" placeholder="Nom du projet" required><br>
+    <textarea name="description" placeholder="Description courte" required></textarea><br>
+    <input name="demo" placeholder="Lien vers une démo"><br>
+    <input name="features" placeholder="Fonctionnalités (séparées par virgule)"><br>
+    <textarea name="installation" placeholder="Instructions d'installation"></textarea><br>
+    <textarea name="usage" placeholder="Instructions d'utilisation"></textarea><br>
+    <input name="screenshots" placeholder="Chemins screenshots (séparés par virgule)"><br>
+    <textarea name="contributing" placeholder="Contribution"></textarea><br>
+    <input name="tests" placeholder="Commande de tests"><br>
+    <textarea name="roadmap" placeholder="Roadmap"></textarea><br>
+    <input name="license" placeholder="Licence"><br>
+    <input name="author" placeholder="Auteur"><br>
+    <input name="email" placeholder="Email"><br>
+    <input name="github" placeholder="Lien GitHub"><br>
+    <input name="social" placeholder="Lien réseaux sociaux"><br>
+    <input name="thanks" placeholder="Remerciements"><br>
+    <button type="submit">Générer README</button>
+  </form>
+</body>
+</html>
