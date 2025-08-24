@@ -1,0 +1,87 @@
+# <%= project %>
+
+[![npm version](https://img.shields.io/npm/v/<%= project.toLowerCase().replace(/ /g, '-') %>.svg)](https://www.npmjs.com/package/<%= project.toLowerCase().replace(/ /g, '-') %>)
+[![License](https://img.shields.io/badge/license-<%= license.replace(/ /g, '%20') %>-blue.svg)](LICENSE)
+[![Tests](https://github.com/<%= github.replace('https://github.com/', '') %>/workflows/CI/badge.svg)](<%= github %>/actions)
+[![Coverage Status](https://coveralls.io/repos/github/<%= github.replace('https://github.com/', '') %>/badge.svg?branch=main)](https://coveralls.io/github/<%= github.replace('https://github.com/', '') %>?branch=main)
+
+## Description
+
+<%= description %>
+
+<% if (demo && demo.length > 0) { %>
+## 🚀 Démo
+
+[Voir la démo ici](<%= demo %>)
+<% } %>
+
+## 📋 Table des matières
+- [Fonctionnalités](#fonctionnalités)
+- [Installation](#installation)
+- [Utilisation](#utilisation)
+<% if (screenshotsList.length > 0) { %>- [Captures d'écran](#captures-décran)<% } %>
+- [Contribution](#contribution)
+- [Tests](#tests)
+<% if (roadmap && roadmap.length > 0) { %>- [Roadmap](#roadmap)<% } %>
+- [Licence](#licence)
+- [Auteur & Contact](#auteur--contact)
+<% if (thanks && thanks.length > 0) { %>- [Remerciements](#remerciements)<% } %>
+
+## ✨ Fonctionnalités
+
+<% featuresList.forEach(function(feat) { %>
+- <%= feat %>
+<% }) %>
+
+## 🛠 Installation
+
+```bash
+<%= installation %>
+```
+
+## ⚡ Utilisation
+
+```bash
+<%= usage %>
+```
+
+<% if (screenshotsList.length > 0) { %>
+## 🖼 Captures d'écran
+
+<% screenshotsList.forEach(function(img) { %>
+![Screenshot](<%= img %>)
+<% }) %>
+<% } %>
+
+## 🤝 Contribution
+
+<%= contributing %>
+
+## 🧪 Tests
+
+```bash
+<%= tests %>
+```
+
+<% if (roadmap && roadmap.length > 0) { %>
+## 🚧 Roadmap
+
+<%= roadmap %>
+<% } %>
+
+## 📝 Licence
+
+Ce projet est sous licence <%= license %>.
+
+## 👤 Auteur & Contact
+
+- <%= author %>
+- [GitHub](<%= github %>)
+- <% if (email && email.length > 0) { %>Email : <%= email %> <% } %>
+- <% if (social && social.length > 0) { %>Réseaux : <%= social %> <% } %>
+
+<% if (thanks && thanks.length > 0) { %>
+## 🙏 Remerciements
+
+<%= thanks %>
+<% } %>
